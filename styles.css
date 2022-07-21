@@ -1,0 +1,56 @@
+:root {
+  --dark-blue: #4663be;
+  --purple: #8dbafe;
+  --teal: #21aee4;
+  --green: #85f1fe;
+
+  --small: 16px;
+  --big: 22px;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: var(--green);
+  font-size: var(--big);
+}
+button{
+  background-color: white;
+  font-size: var(--small);
+  border: 2px solid var(--purple);
+  transition: box-shadow .15s linear;
+}
+button: focus{
+  box-shadow:
+    4px 4px 0px 0px var(--purple),
+    8px 8px 0px 0px var(--green),
+    12px 12px 0px 0px var(--teal);
+}
+
+input{
+  border: solid 2px var(--purple);
+  font-size: var(--small);
+  line-height: var(--small);
+  width: 50vw;
+  transition: box-shadow .15s linear;
+}
+input: focus{
+  border: solid 2px white;
+  outline: solid 1px var(--green);
+  box-shadow:
+    4px 4px 0px 0px var(--purple),
+    8px 8px 0px 0px var(--green),
+    12px 12px 0px 0px var(--teal);
+
+}
+h1{
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 
+  
+  0px 0px 0 var(--green),
+  1px 1px 0 var(--teal),
+  2px 2px 0 var(--purple),
+  3px 3px 0 var(--dark-blue);
+  color: var(--green);
+}
+

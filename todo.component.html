@@ -1,0 +1,25 @@
+<h1>{{ title }}</h1>
+<!-- Welcome message and instructions -->
+<style>
+  div.a{
+    text-align:center;
+  }
+</style>
+
+<div class="a">
+  <p>Welcome! Please enter your items down below.</p>
+</div>
+
+<!-- form section -->
+<section class="todo-form">
+  <!-- binds input to do to item -->
+  <input [(ngModel)]="ItemName" type="text" [placeholder]="ItemName" />
+  <!-- updates list based on ItemName and saves using button click -->
+  <button (click)="updateList()">Save</button>
+</section>
+
+<!-- class list  -->
+<ul class="todo-list">
+  <!-- loop through items in ul -->
+  <li *ngFor="let item of todoItems">{{ item }}</li>
+</ul>
